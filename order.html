@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Hub - Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Foodie Hub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Food Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Place Your Order</h2>
+
+        <form id="orderForm" class="form-box">
+
+            <label for="customer">Customer Name:</label>
+            <input type="text" id="customer" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" rows="3" required></textarea>
+
+            <label for="food">Select Food:</label>
+            <select id="food" required>
+                <option value="Pizza">Pizza - Rs. 800</option>
+                <option value="Burger">Burger - Rs. 450</option>
+                <option value="Fries">French Fries - Rs. 250</option>
+                <option value="Pasta">Pasta - Rs. 600</option>
+                <option value="Pancakes">Pancakes - Rs. 400</option>
+                <option value="BBQ">BBQ - Rs. 1000</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" max="100" value="1" required>
+
+            <h3 id="total">Selected Item Total: Rs. 800</h3>
+
+            <button type="button" class="order-btn" id="addOrder">
+                Add to Order
+            </button>
+
+            <button type="button" class="order-btn" id="doneOrder">
+                Done
+            </button>
+
+            <h3>Your Order List</h3>
+
+            <div id="orderSummary"></div>
+
+            <p id="message"></p>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Foodie Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
